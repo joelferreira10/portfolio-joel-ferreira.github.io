@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- bootstarp-->
+    <link rel="stylesheet" href="./css-bootstrap/bootstrap.min.css">
+
+    <!--Iconos-->
+    <link rel="shortcut icon" href="./img/descargar.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2fd7ae33ae.js" crossorigin="anonymous"></script>
+    
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <!--font-family: 'Dancing Script', cursive;-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--font-family: 'Roboto', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!--font-family: 'Josefin Slab', serif;-->
+
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--botpoison-->
+    <script src="https://unpkg.com/@botpoison/browser"></script>
+    <title>Portfolio Joel Ferreira</title>
+</head>
+<body class="d-flex flex-column">
+        <!--menu flotante-->
+          <div class="nav-munu-flotatnte d-none d-md-flex flex-md-column align-items-end justify-content-center align-items-md-start justify-content-md-center mr-auto">
+            <div class="caja-nav" style="background-color:#3b5998;"><a href="https://www.facebook.com/joel.ferreira.5076" target="_blank"><i class="fab fa-facebook"></i></a></div>
+            <div class="caja-nav" style="background-color: #fd1d1d;"><a href="https://www.instagram.com/elias.jo.10/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+            <div class="caja-nav" style="background-color: #1da1f2;"><a href="https://twitter.com/joelferreiraok" target="_blank"><i class="fab fa-twitter"></i></a></div>
+            <div class="caja-nav" style="background-color: #0077b5;"><a href="https://www.linkedin.com/in/joel-ferreira-9a05a692/" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+            <div class="caja-nav" style="background-color: #6e5494;"><a href="https://github.com/joelferreira10/" target="_blank"><i class="fab fa-github"></i></a></div>
+          </div>  
+        <!--fin menu flotante-->
+        <!--inicio de menu de navegacion-->
+        <div class="container-fluid sticky-top navegacion">
+            <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-around">
+                <div class="container-fluid">
+                  <a class="navbar-brand nombre-nav fs-3" id="index" href="./index.html"><i class="far fa-file-code"></i> Inicio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center text-center menu-nav" style="width: 100%;">
+                      <li class="nav-item mx-lg-4">
+                        <a class="nav-link active fs-5" aria-current="page" href="#sobre-mi"><i class="fas fa-child"></i>Sobre mi</a>
+                      </li>
+                        <a class="nav-link active fs-5 hab" aria-current="page" href="#habilidades"><i class="fas fa-snowflake"></i> Habilidades</a>
+                      </li>
+                      <li class="nav-item mx-lg-4">
+                        <a class="nav-link active fs-5" aria-current="page" href="#proyectos"><i class="fas fa-briefcase"></i> Proyectos</a>
+                      </li>
+                    </ul> 
+                    <form class="d-flex justify-content-center">
+                      <a href="#contacto" class="btn btn-outline-primary">Contactame</a>
+                    </form>
+                    <div class=" d-flex d-md-none justify-content-center align-items-center mt-3">
+                      <div class="caja-colapso" style="background-color:#3b5998;"><a href="https://www.facebook.com/joel.ferreira.5076" class="redes" target="_blank"><i class="fab fa-facebook"></i></a></div>
+                      <div class="caja-colapso" style="background-color: #fd1d1d;"><a href="https://www.instagram.com/elias.jo.10/" class="redes" target="_blank"><i class="fab fa-instagram"></i></a></div>
+                      <div class="caja-colapso" style="background-color: #1da1f2;"><a href="https://twitter.com/joelferreiraok" class="redes" target="_blank"><i class="fab fa-twitter"></i></a></div>
+                      <div class="caja-colapso" style="background-color: #0077b5;"><a href="https://www.linkedin.com/in/joel-ferreira-9a05a692/" class="redes" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+                      <div class="caja-colapso" style="background-color: #6e5494;"><a href="https://github.com/joelferreira10/" class="redes" target="_blank"><i class="fab fa-github"></i></a></div>
+                    </div>
+                </div> 
+              </div>
+            </nav>
+        </div> <!--fin menu de navegacion-->
+     
+        <!--inicio portada-->
+        <div class="contenedor-portada" id="portada">
+          <section class="container-fluid portada-presentacion">
+              <div class="row">   
+                  <div class="col-12 img-perfil d-flex flex-column align-items-center ">
+                    <h1 class="h1 titulo-portada">I'm joel<i class="fas fa-code px-2"></i></h1>
+                      <img src="./img/foto-perfil.jpg" alt="">
+                      <div class="contenido-perfil1 d-flex flex-column align-items-center my-3">
+                          <p>FullStack developer</p>
+                          <p>content creator</p>
+                          <p>Web designer</p>
+                      </div>
+                  </div>
+              </div>    
+          </section>
+        </div> <!--finaliza portada-->
+    
+  <!--Section sobre mi-->
+        <section class="container-fluid sobre-mi" id="sobre-mi">
+          <div class="container mt-5">
+            <h1 class="h1 text-center pt-5">Hola, soy joel encantado de conocerte</h1>
+            <P class="p text-center fs-4">Soy un desarrollador front-end orientado al diseño. me esfuerzo por crear aplicaciones web inmersivas y hermosas a través de código cuidadosamente elaborado con diseño centrado en el usuario y al Responsive Desing.</p>
+          </div>
+        </section>
+  <!--Finaliza section sobre mi-->
+
+  <!--Inicia section Habilidades-->
+        <div class="container habilidades" id="habilidades">
+          <div class="row mt-5">
+            <div class="col-12 col-lg-4 text-center">
+              <i class="fas fa-pen pt-5"></i>
+              <h1 class="h1 fs-3 py-3">Desarrollador front-end</h1>
+              <p class="titulo-interno pt-3">Diseño:</p>
+              <p class="parrafo">HTML, CSS, Sass, JavaScript, ReactJs</p>
+              <p class="parrafo"><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-sass"></i> <i class="fab fa-node-js"></i></p>
+              <p class="titulo-interno pt-3">Herramientas de desarrollo:</p>
+                <p class="parrafo">Visual Studio Code</li>
+                <p class="parrafo">Bootstrap</p>
+                <p class="parrafo">Github</p>
+                <p class="parrafo">Gitlab</p>
+                <p class="parrafo">Terminal</p>
+            </div>
+            <div class="card-skill col-12 col-lg-4 text-center">
+              <i class="fas fa-server pt-5"></i>
+              <h1 class="h1 fs-3 py-3">Base de datos</h1>
+              <p class="titulo-interno pt-3">Diseño base de datos:</p>
+              <p class="parrafo">SQLserver, MySQL</p>
+              <p class="parrafo"><i class="fas fa-database"></i></p>
+              <p class="titulo-interno pt-3">Herramientas de desarrollo:</p>
+                <p class="parrafo">SQL Server Management Studio</li>
+                <p class="parrafo">MySQL Community Server</p>
+                <p class="parrafo">Github</p>
+                <p class="parrafo">Gitlab</p>
+            </div>
+            <div class=" col-12 col-lg-4 text-center">
+              <i class="fas fa-laptop-code pt-5"></i>
+              <h1 class="h1 fs-3 py-3">Programacion</h1>
+              <p class="titulo-interno pt-3">Lenguajes:</p>
+              <p class="parrafo">C, C++, C#, Java,NodeJs</p>
+              <p class="parrafo"><i class="fab fa-java"></i> <i class="fab fa-python"></i></p>
+              <p class="titulo-interno pt-3">Herramientas de desarrollo:</p>
+                <p class="parrafo">Visual Studio</li>
+                <p class="parrafo">Eclipse</p>
+            </div>
+          </div>
+        </div>
+      <!--finaliza section habilidades-->
+
+      <!--Section proyectos-->
+        <section class="container proyectos" id="proyectos">
+          <h1 class="h1 text-center mt-5">Proyectos</h1>
+          <div class="row justify-content-around">
+            <div class="card mt-3 tarjeta" style="width: 18rem;;">
+              <img src="./img/proyecto1.jpg" class="card-img-top" alt="Agencia dragon">
+              <div class="card-body">
+                <h3 class="card-title">Agencia de viajes Dragon.com</h3>
+                <p class="card-text"><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i><i class="fab fa-bootstrap"></i></p>
+                <a href="https://sad-lamport-3b0ebc.netlify.app" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+              </div>
+            </div>
+
+
+            <div class="card mt-3" style="width: 18rem;">
+              <img src="./img/proyecto2.jpg" class="card-img-top" alt="Restaurante">
+              <div class="card-body">
+                <h3 class="card-title">Restaurante</h3>
+                <p class="card-text"><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i></p>
+                <a href="https://amazing-northcutt-52f634.netlify.app" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+              </div>
+            </div>
+
+            <div class="card mt-3" style="width: 18rem;">
+              <img src="./img/proyecto3.jpg" class="card-img-top" alt="Agencia de viajes">
+              <div class="card-body">
+                <h3 class="card-title">Clima</h3>
+                <p class="card-text"><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i></p>
+                <a href="https://weather-app-239.netlify.app" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+              </div>
+            </div>
+            <div class="card mt-3" style="width: 18rem;">
+              <img src="./img/proyecto4.jpg" class="card-img-top" alt="restaurante">
+              <div class="card-body">
+                <h3 class="card-title">Restaurante</h3>
+                <p class="card-text"><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i><i class="fab fa-js"></i></p>
+                <a href="https://keen-hodgkin-bf8112.netlify.app" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+              </div>
+            </div>
+          </div>
+        </section >
+        <!--contactame-->
+        <section class="container-fluid form-contacto" id="contacto">
+          <h1 class="h1 text-center mt-5">Contactame</h1>
+          <form class="form" method="POST" action="https://submit-form.com/VBqm6lZX"
+          data-botpoison-public-key="pk_69527946-626e-4fe6-8405-f95884df2c84"
+          target="_blank">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" name="nombre" id="floatingInput" placeholder="Nombre" required>
+              <label for="nombre">Nombre</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com" required>
+              <label for="email">Email</label>
+            </div>
+            <div class="form-floating">
+              <input type="text" class="form-control" name="asunto" id="floatingPassword" placeholder="Asunto" required>
+              <label for="asunto">Asunto</label>
+            </div>
+            <div class="form-floating mt-3">
+              <textarea class="form-control" name="comentario" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" placeholder="Comentario" required></textarea>
+              <label for="comentario">Comentario</label>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary btn-form">Enviar</button>
+            </div>
+          </form>
+        </section>
+        <div class="container">
+          <h1 class="h1 text-center">Ubicacion</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.30717595005!2d-65.29263446298478!3d-26.832688471699427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1623699132918!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+        <footer class=".container-fluid pb-2 footer d-flex justify-content-center">
+          <div class="row d-flex ">
+            <div class="col-12 d-flex  justify-content-center">
+              
+              <p class="mx-md-5"><i class="fas fa-envelope"></i> ferreira.joel.93@gmail.com</p>
+
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+            <i class="fas fa-copyright"> Creado por Joel ferreira - 2021</i>
+            </div>
+          </div>
+        </footer>
+        
+
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
